@@ -1,0 +1,15 @@
+ohttpd: Objective-C HTTP server
+
+This is a full-fledged HTTP server written in Objective-C. It have the following parts:
+
+* CGIKit.4: CGIKit.framework (OS X) / libCGIKit.so.4 (Linux)
+  This is the new CGIKit, which is the core library the entire server and its architecture runs on.
+
+* ohttpd
+  This is the server executable. It is a simple stub that calls into CGIKit.
+
+* Various CGI*Module
+  These are modules for CGIKit server, including static files, bundles, and directory listing.
+
+* CGIInfo
+  A bundle running under CGIBundleModule, phpinfo() equilivent;

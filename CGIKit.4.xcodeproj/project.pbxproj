@@ -183,6 +183,7 @@
 		1D23687016D8A402007934CD /* CGIPlistModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGIPlistModule.m; sourceTree = "<group>"; };
 		1D23687516D8A619007934CD /* style.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = style.css; sourceTree = "<group>"; };
 		1D23687716D8ACFA007934CD /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		1D23687816D8AE75007934CD /* README */ = {isa = PBXFileReference; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
 		1D2697F216C3B1520092EC2D /* CGIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CGIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D2697F516C3B1520092EC2D /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		1D2697F816C3B1520092EC2D /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -378,6 +379,7 @@
 			isa = PBXGroup;
 			children = (
 				1D23687716D8ACFA007934CD /* .gitignore */,
+				1D23687816D8AE75007934CD /* README */,
 				1D2697FB16C3B1520092EC2D /* CGIKit.4 */,
 				1D0957BA16CFCE0B000D76B3 /* ohttpd */,
 				1DC69A9A16D09FE3008B4976 /* CGIStaticContentModule */,
