@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CGIEnabledSites</key>
+	<string>sites-enabled</string>
+	<key>CGILogLevel</key>
+	<integer>0</integer>
+	<key>CGIListen</key>
+	<array>
+		<integer>18080</integer>
+	</array>
+	<key>CGIDispatch</key>
+	<false/>
+	<key>CGIProcessModules</key>
+	<dict>
+		<key>*</key>
+		<string>CGIStaticContentModule</string>
+		<key>bundle</key>
+		<string>CGIBundleModule</string>
+		<key>plist</key>
+		<string>CGIPlistModule</string>
+	</dict>
+	<key>CGIListingModule</key>
+	<string>CGIListingModule</string>
+	<key>CGIModuleRoot</key>
+	<string>.</string>
+</dict>
+</plist>

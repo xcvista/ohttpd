@@ -7,13 +7,183 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1D2697F616C3B1520092EC2D /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D2697F516C3B1520092EC2D /* Cocoa.framework */; };
+		1D0957BC16CFCE0B000D76B3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D0957BB16CFCE0B000D76B3 /* main.m */; };
+		1D0957C016CFCE0B000D76B3 /* ohttpd.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1D0957BF16CFCE0B000D76B3 /* ohttpd.1 */; };
+		1D0957CA16CFD4B1000D76B3 /* ohttpd.plist in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1D0957C716CFD452000D76B3 /* ohttpd.plist */; };
+		1D0957D216CFDA89000D76B3 /* default.plist in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1D0957CC16CFD718000D76B3 /* default.plist */; };
+		1D11F66316D80939003DE312 /* CGIResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D11F66116D80939003DE312 /* CGIResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1D11F66416D80939003DE312 /* CGIResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D11F66216D80939003DE312 /* CGIResponse.m */; };
+		1D11F66616D81572003DE312 /* status.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1D11F66516D81572003DE312 /* status.plist */; };
+		1D11F66916D81FCE003DE312 /* CGIStaticContentModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D11F66816D81FCE003DE312 /* CGIStaticContentModule.m */; };
+		1D11F66B16D8200D003DE312 /* CGIModule.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D11F66A16D81FEC003DE312 /* CGIModule.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1D11F67816D82248003DE312 /* GCDAsyncSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D11F67516D82224003DE312 /* GCDAsyncSocket.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		1D11F67916D82250003DE312 /* CGISite.h in Headers */ = {isa = PBXBuildFile; fileRef = 1DC69A8E16D01DD0008B4976 /* CGISite.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1D11F67A16D82255003DE312 /* CGIConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D11F66C16D8220D003DE312 /* CGIConnection.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1D11F67B16D82259003DE312 /* CGIListener.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D11F66E16D8220D003DE312 /* CGIListener.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1D11F67C16D8225D003DE312 /* CGIServer.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D11F67016D8220D003DE312 /* CGIServer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1D11F67D16D82519003DE312 /* CGIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D2697F216C3B1520092EC2D /* CGIKit.framework */; };
+		1D11F68116D82555003DE312 /* CGISite.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DC69A8F16D01DD0008B4976 /* CGISite.m */; };
+		1D11F68216D82560003DE312 /* CGIConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D11F66D16D8220D003DE312 /* CGIConnection.m */; };
+		1D11F68316D82564003DE312 /* CGIListener.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D11F66F16D8220D003DE312 /* CGIListener.m */; };
+		1D11F68416D82567003DE312 /* CGIServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D11F67116D8220D003DE312 /* CGIServer.m */; };
+		1D11F68516D82576003DE312 /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D11F67616D82224003DE312 /* GCDAsyncSocket.m */; };
+		1D11F68616D8259A003DE312 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D2697FA16C3B1520092EC2D /* Foundation.framework */; };
+		1D11F68716D825A1003DE312 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D2697FA16C3B1520092EC2D /* Foundation.framework */; };
+		1D11F68916D825BA003DE312 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DC69A8116D0122C008B4976 /* Security.framework */; };
+		1D11F68A16D825D3003DE312 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D2697F516C3B1520092EC2D /* Cocoa.framework */; };
+		1D11F69616D82895003DE312 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1D11F69416D82895003DE312 /* InfoPlist.strings */; };
+		1D11F69D16D828BE003DE312 /* CGIListingModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D11F69C16D828BE003DE312 /* CGIListingModule.m */; };
+		1D11F69E16D828E3003DE312 /* CGIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D2697F216C3B1520092EC2D /* CGIKit.framework */; };
+		1D11F69F16D828E9003DE312 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D2697FA16C3B1520092EC2D /* Foundation.framework */; };
+		1D11F6A516D83E52003DE312 /* NSFileManager+Directory.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D11F6A316D83E4C003DE312 /* NSFileManager+Directory.m */; };
+		1D11F6A616D83E56003DE312 /* NSFileManager+Directory.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D11F6A216D83E4C003DE312 /* NSFileManager+Directory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1D11F6A816D84D2B003DE312 /* mime.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1D11F6A716D84D2B003DE312 /* mime.plist */; };
+		1D23683516D875B3007934CD /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D2697F516C3B1520092EC2D /* Cocoa.framework */; };
+		1D23683B16D875B3007934CD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1D23683916D875B3007934CD /* InfoPlist.strings */; };
+		1D23684416D8793F007934CD /* CGIBundleModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D23684316D8793F007934CD /* CGIBundleModule.m */; };
+		1D23684516D87991007934CD /* CGIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D2697F216C3B1520092EC2D /* CGIKit.framework */; };
+		1D23684B16D89571007934CD /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D2697F516C3B1520092EC2D /* Cocoa.framework */; };
+		1D23685116D89571007934CD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1D23684F16D89571007934CD /* InfoPlist.strings */; };
+		1D23685616D89577007934CD /* CGIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D2697F216C3B1520092EC2D /* CGIKit.framework */; };
+		1D23685C16D89763007934CD /* CGIInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D23685B16D89763007934CD /* CGIInfo.m */; };
+		1D23685E16D89CE0007934CD /* style.css in Resources */ = {isa = PBXBuildFile; fileRef = 1D23685D16D89CE0007934CD /* style.css */; };
+		1D23686416D8A3C7007934CD /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D2697F516C3B1520092EC2D /* Cocoa.framework */; };
+		1D23686A16D8A3C7007934CD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1D23686816D8A3C7007934CD /* InfoPlist.strings */; };
+		1D23687116D8A402007934CD /* CGIPlistModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D23687016D8A402007934CD /* CGIPlistModule.m */; };
+		1D23687216D8A40F007934CD /* CGIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D2697F216C3B1520092EC2D /* CGIKit.framework */; };
+		1D23687616D8A619007934CD /* style.css in Resources */ = {isa = PBXBuildFile; fileRef = 1D23687516D8A619007934CD /* style.css */; };
 		1D26980016C3B1520092EC2D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1D2697FE16C3B1520092EC2D /* InfoPlist.strings */; };
-		1D26980416C3B1520092EC2D /* CGIKit_4.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D26980316C3B1520092EC2D /* CGIKit_4.m */; };
+		1DC69A8A16D01CA5008B4976 /* CGIKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D26980216C3B1520092EC2D /* CGIKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1DC69A8B16D01CAD008B4976 /* CGIRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 1DC69A8716D01C3F008B4976 /* CGIRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1DC69A8C16D01CB2008B4976 /* CGIRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DC69A8816D01C3F008B4976 /* CGIRequest.m */; };
+		1DC69A8D16D01CBB008B4976 /* CGIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D2697F216C3B1520092EC2D /* CGIKit.framework */; };
+		1DC69A9216D01E53008B4976 /* CGIDecls.h in Headers */ = {isa = PBXBuildFile; fileRef = 1DC69A9116D01E42008B4976 /* CGIDecls.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1DC69A9F16D09FE3008B4976 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1DC69A9D16D09FE3008B4976 /* InfoPlist.strings */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		1D11F65F16D80386003DE312 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1D2697E916C3B1520092EC2D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1DC69A9616D09FE2008B4976;
+			remoteInfo = CGIStaticContentModule;
+		};
+		1D11F6A016D828F8003DE312 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1D2697E916C3B1520092EC2D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1D11F68E16D82895003DE312;
+			remoteInfo = CGIListingModule;
+		};
+		1D23684016D878E6007934CD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1D2697E916C3B1520092EC2D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1D23683316D875B3007934CD;
+			remoteInfo = CGIBundleModule;
+		};
+		1D23685716D89598007934CD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1D2697E916C3B1520092EC2D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1D23684916D89571007934CD;
+			remoteInfo = CGIInfo;
+		};
+		1D23687316D8A4B1007934CD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1D2697E916C3B1520092EC2D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1D23686216D8A3C7007934CD;
+			remoteInfo = CGIPlistModule;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1D0957B516CFCE0B000D76B3 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+				1D0957C016CFCE0B000D76B3 /* ohttpd.1 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		1D0957C916CFD47D000D76B3 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 16;
+			files = (
+				1D0957CA16CFD4B1000D76B3 /* ohttpd.plist in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1D0957D116CFDA74000D76B3 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "sites-enabled";
+			dstSubfolderSpec = 16;
+			files = (
+				1D0957D216CFDA89000D76B3 /* default.plist in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		1D2697F216C3B1520092EC2D /* CGIKit.4.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CGIKit.4.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D0957B716CFCE0B000D76B3 /* ohttpd */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ohttpd; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D0957BB16CFCE0B000D76B3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1D0957BE16CFCE0B000D76B3 /* ohttpd-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ohttpd-Prefix.pch"; sourceTree = "<group>"; };
+		1D0957BF16CFCE0B000D76B3 /* ohttpd.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = ohttpd.1; sourceTree = "<group>"; };
+		1D0957C716CFD452000D76B3 /* ohttpd.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ohttpd.plist; sourceTree = "<group>"; };
+		1D0957CC16CFD718000D76B3 /* default.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = default.plist; sourceTree = "<group>"; };
+		1D11F66116D80939003DE312 /* CGIResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGIResponse.h; sourceTree = "<group>"; };
+		1D11F66216D80939003DE312 /* CGIResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGIResponse.m; sourceTree = "<group>"; };
+		1D11F66516D81572003DE312 /* status.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = status.plist; sourceTree = "<group>"; };
+		1D11F66716D81FCE003DE312 /* CGIStaticContentModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGIStaticContentModule.h; sourceTree = "<group>"; };
+		1D11F66816D81FCE003DE312 /* CGIStaticContentModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGIStaticContentModule.m; sourceTree = "<group>"; };
+		1D11F66A16D81FEC003DE312 /* CGIModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CGIModule.h; sourceTree = "<group>"; };
+		1D11F66C16D8220D003DE312 /* CGIConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGIConnection.h; sourceTree = "<group>"; };
+		1D11F66D16D8220D003DE312 /* CGIConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGIConnection.m; sourceTree = "<group>"; };
+		1D11F66E16D8220D003DE312 /* CGIListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGIListener.h; sourceTree = "<group>"; };
+		1D11F66F16D8220D003DE312 /* CGIListener.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGIListener.m; sourceTree = "<group>"; };
+		1D11F67016D8220D003DE312 /* CGIServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGIServer.h; sourceTree = "<group>"; };
+		1D11F67116D8220D003DE312 /* CGIServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGIServer.m; sourceTree = "<group>"; };
+		1D11F67516D82224003DE312 /* GCDAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncSocket.h; sourceTree = "<group>"; };
+		1D11F67616D82224003DE312 /* GCDAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncSocket.m; sourceTree = "<group>"; };
+		1D11F68F16D82895003DE312 /* CGIListingModule.cgimodule */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CGIListingModule.cgimodule; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D11F69316D82895003DE312 /* CGIListingModule-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CGIListingModule-Info.plist"; sourceTree = "<group>"; };
+		1D11F69516D82895003DE312 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1D11F69716D82895003DE312 /* CGIListingModule-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CGIListingModule-Prefix.pch"; sourceTree = "<group>"; };
+		1D11F69B16D828BE003DE312 /* CGIListingModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGIListingModule.h; sourceTree = "<group>"; };
+		1D11F69C16D828BE003DE312 /* CGIListingModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGIListingModule.m; sourceTree = "<group>"; };
+		1D11F6A216D83E4C003DE312 /* NSFileManager+Directory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSFileManager+Directory.h"; sourceTree = "<group>"; };
+		1D11F6A316D83E4C003DE312 /* NSFileManager+Directory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSFileManager+Directory.m"; sourceTree = "<group>"; };
+		1D11F6A716D84D2B003DE312 /* mime.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = mime.plist; sourceTree = "<group>"; };
+		1D23683416D875B3007934CD /* CGIBundleModule.cgimodule */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CGIBundleModule.cgimodule; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D23683816D875B3007934CD /* CGIBundleModule-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CGIBundleModule-Info.plist"; sourceTree = "<group>"; };
+		1D23683A16D875B3007934CD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1D23683C16D875B3007934CD /* CGIBundleModule-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CGIBundleModule-Prefix.pch"; sourceTree = "<group>"; };
+		1D23684216D8793F007934CD /* CGIBundleModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGIBundleModule.h; sourceTree = "<group>"; };
+		1D23684316D8793F007934CD /* CGIBundleModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGIBundleModule.m; sourceTree = "<group>"; };
+		1D23684A16D89571007934CD /* CGIInfo.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CGIInfo.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D23684E16D89571007934CD /* CGIInfo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CGIInfo-Info.plist"; sourceTree = "<group>"; };
+		1D23685016D89571007934CD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1D23685216D89571007934CD /* CGIInfo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CGIInfo-Prefix.pch"; sourceTree = "<group>"; };
+		1D23685A16D89763007934CD /* CGIInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGIInfo.h; sourceTree = "<group>"; };
+		1D23685B16D89763007934CD /* CGIInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGIInfo.m; sourceTree = "<group>"; };
+		1D23685D16D89CE0007934CD /* style.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = style.css; sourceTree = "<group>"; };
+		1D23686316D8A3C7007934CD /* CGIPlistModule.cgimodule */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CGIPlistModule.cgimodule; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D23686716D8A3C7007934CD /* CGIPlistModule-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CGIPlistModule-Info.plist"; sourceTree = "<group>"; };
+		1D23686916D8A3C7007934CD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1D23686B16D8A3C7007934CD /* CGIPlistModule-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CGIPlistModule-Prefix.pch"; sourceTree = "<group>"; };
+		1D23686F16D8A402007934CD /* CGIPlistModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGIPlistModule.h; sourceTree = "<group>"; };
+		1D23687016D8A402007934CD /* CGIPlistModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGIPlistModule.m; sourceTree = "<group>"; };
+		1D23687516D8A619007934CD /* style.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = style.css; sourceTree = "<group>"; };
+		1D23687716D8ACFA007934CD /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		1D2697F216C3B1520092EC2D /* CGIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CGIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D2697F516C3B1520092EC2D /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		1D2697F816C3B1520092EC2D /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		1D2697F916C3B1520092EC2D /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
@@ -21,26 +191,200 @@
 		1D2697FD16C3B1520092EC2D /* CGIKit.4-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CGIKit.4-Info.plist"; sourceTree = "<group>"; };
 		1D2697FF16C3B1520092EC2D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1D26980116C3B1520092EC2D /* CGIKit.4-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CGIKit.4-Prefix.pch"; sourceTree = "<group>"; };
-		1D26980216C3B1520092EC2D /* CGIKit_4.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CGIKit_4.h; sourceTree = "<group>"; };
-		1D26980316C3B1520092EC2D /* CGIKit_4.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CGIKit_4.m; sourceTree = "<group>"; };
+		1D26980216C3B1520092EC2D /* CGIKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CGIKit.h; sourceTree = "<group>"; };
+		1DC69A8116D0122C008B4976 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		1DC69A8716D01C3F008B4976 /* CGIRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGIRequest.h; sourceTree = "<group>"; };
+		1DC69A8816D01C3F008B4976 /* CGIRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGIRequest.m; sourceTree = "<group>"; };
+		1DC69A8E16D01DD0008B4976 /* CGISite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGISite.h; sourceTree = "<group>"; };
+		1DC69A8F16D01DD0008B4976 /* CGISite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGISite.m; sourceTree = "<group>"; };
+		1DC69A9116D01E42008B4976 /* CGIDecls.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CGIDecls.h; sourceTree = "<group>"; };
+		1DC69A9716D09FE2008B4976 /* CGIStaticContentModule.cgimodule */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CGIStaticContentModule.cgimodule; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DC69A9816D09FE3008B4976 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		1DC69A9C16D09FE3008B4976 /* CGIStaticContentModule-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CGIStaticContentModule-Info.plist"; sourceTree = "<group>"; };
+		1DC69A9E16D09FE3008B4976 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1DC69AA016D09FE3008B4976 /* CGIStaticContentModule-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CGIStaticContentModule-Prefix.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		1D0957B416CFCE0B000D76B3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D11F68616D8259A003DE312 /* Foundation.framework in Frameworks */,
+				1DC69A8D16D01CBB008B4976 /* CGIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1D11F68C16D82895003DE312 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D11F69F16D828E9003DE312 /* Foundation.framework in Frameworks */,
+				1D11F69E16D828E3003DE312 /* CGIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1D23683116D875B3007934CD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D23684516D87991007934CD /* CGIKit.framework in Frameworks */,
+				1D23683516D875B3007934CD /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1D23684716D89571007934CD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D23685616D89577007934CD /* CGIKit.framework in Frameworks */,
+				1D23684B16D89571007934CD /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1D23686016D8A3C7007934CD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D23687216D8A40F007934CD /* CGIKit.framework in Frameworks */,
+				1D23686416D8A3C7007934CD /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1D2697EE16C3B1520092EC2D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1D2697F616C3B1520092EC2D /* Cocoa.framework in Frameworks */,
+				1D11F68A16D825D3003DE312 /* Cocoa.framework in Frameworks */,
+				1D11F68916D825BA003DE312 /* Security.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1DC69A9416D09FE2008B4976 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D11F68716D825A1003DE312 /* Foundation.framework in Frameworks */,
+				1D11F67D16D82519003DE312 /* CGIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1D0957BA16CFCE0B000D76B3 /* ohttpd */ = {
+			isa = PBXGroup;
+			children = (
+				1D0957BB16CFCE0B000D76B3 /* main.m */,
+				1D0957C716CFD452000D76B3 /* ohttpd.plist */,
+				1D0957CC16CFD718000D76B3 /* default.plist */,
+				1D0957BF16CFCE0B000D76B3 /* ohttpd.1 */,
+				1D0957BD16CFCE0B000D76B3 /* Supporting Files */,
+			);
+			path = ohttpd;
+			sourceTree = "<group>";
+		};
+		1D0957BD16CFCE0B000D76B3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1D0957BE16CFCE0B000D76B3 /* ohttpd-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1D11F69116D82895003DE312 /* CGIListingModule */ = {
+			isa = PBXGroup;
+			children = (
+				1D11F69216D82895003DE312 /* Supporting Files */,
+				1D11F69B16D828BE003DE312 /* CGIListingModule.h */,
+				1D11F69C16D828BE003DE312 /* CGIListingModule.m */,
+			);
+			path = CGIListingModule;
+			sourceTree = "<group>";
+		};
+		1D11F69216D82895003DE312 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1D11F69316D82895003DE312 /* CGIListingModule-Info.plist */,
+				1D11F69416D82895003DE312 /* InfoPlist.strings */,
+				1D11F69716D82895003DE312 /* CGIListingModule-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1D23683616D875B3007934CD /* CGIBundleModule */ = {
+			isa = PBXGroup;
+			children = (
+				1D23683716D875B3007934CD /* Supporting Files */,
+				1D23684216D8793F007934CD /* CGIBundleModule.h */,
+				1D23684316D8793F007934CD /* CGIBundleModule.m */,
+			);
+			path = CGIBundleModule;
+			sourceTree = "<group>";
+		};
+		1D23683716D875B3007934CD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1D23683816D875B3007934CD /* CGIBundleModule-Info.plist */,
+				1D23683916D875B3007934CD /* InfoPlist.strings */,
+				1D23683C16D875B3007934CD /* CGIBundleModule-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1D23684C16D89571007934CD /* CGIInfo */ = {
+			isa = PBXGroup;
+			children = (
+				1D23684D16D89571007934CD /* Supporting Files */,
+				1D23685A16D89763007934CD /* CGIInfo.h */,
+				1D23685B16D89763007934CD /* CGIInfo.m */,
+				1D23685D16D89CE0007934CD /* style.css */,
+			);
+			path = CGIInfo;
+			sourceTree = "<group>";
+		};
+		1D23684D16D89571007934CD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1D23684E16D89571007934CD /* CGIInfo-Info.plist */,
+				1D23684F16D89571007934CD /* InfoPlist.strings */,
+				1D23685216D89571007934CD /* CGIInfo-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1D23686516D8A3C7007934CD /* CGIPlistModule */ = {
+			isa = PBXGroup;
+			children = (
+				1D23686616D8A3C7007934CD /* Supporting Files */,
+				1D23686F16D8A402007934CD /* CGIPlistModule.h */,
+				1D23687016D8A402007934CD /* CGIPlistModule.m */,
+				1D23687516D8A619007934CD /* style.css */,
+			);
+			path = CGIPlistModule;
+			sourceTree = "<group>";
+		};
+		1D23686616D8A3C7007934CD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1D23686716D8A3C7007934CD /* CGIPlistModule-Info.plist */,
+				1D23686816D8A3C7007934CD /* InfoPlist.strings */,
+				1D23686B16D8A3C7007934CD /* CGIPlistModule-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		1D2697E816C3B1520092EC2D = {
 			isa = PBXGroup;
 			children = (
+				1D23687716D8ACFA007934CD /* .gitignore */,
 				1D2697FB16C3B1520092EC2D /* CGIKit.4 */,
+				1D0957BA16CFCE0B000D76B3 /* ohttpd */,
+				1DC69A9A16D09FE3008B4976 /* CGIStaticContentModule */,
+				1D11F69116D82895003DE312 /* CGIListingModule */,
+				1D23683616D875B3007934CD /* CGIBundleModule */,
+				1D23684C16D89571007934CD /* CGIInfo */,
+				1D23686516D8A3C7007934CD /* CGIPlistModule */,
 				1D2697F416C3B1520092EC2D /* Frameworks */,
 				1D2697F316C3B1520092EC2D /* Products */,
 			);
@@ -49,7 +393,13 @@
 		1D2697F316C3B1520092EC2D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1D2697F216C3B1520092EC2D /* CGIKit.4.framework */,
+				1D2697F216C3B1520092EC2D /* CGIKit.framework */,
+				1D0957B716CFCE0B000D76B3 /* ohttpd */,
+				1DC69A9716D09FE2008B4976 /* CGIStaticContentModule.cgimodule */,
+				1D11F68F16D82895003DE312 /* CGIListingModule.cgimodule */,
+				1D23683416D875B3007934CD /* CGIBundleModule.cgimodule */,
+				1D23684A16D89571007934CD /* CGIInfo.bundle */,
+				1D23686316D8A3C7007934CD /* CGIPlistModule.cgimodule */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -57,7 +407,9 @@
 		1D2697F416C3B1520092EC2D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1DC69A8116D0122C008B4976 /* Security.framework */,
 				1D2697F516C3B1520092EC2D /* Cocoa.framework */,
+				1DC69A9816D09FE3008B4976 /* CoreFoundation.framework */,
 				1D2697F716C3B1520092EC2D /* Other Frameworks */,
 			);
 			name = Frameworks;
@@ -76,8 +428,26 @@
 		1D2697FB16C3B1520092EC2D /* CGIKit.4 */ = {
 			isa = PBXGroup;
 			children = (
-				1D26980216C3B1520092EC2D /* CGIKit_4.h */,
-				1D26980316C3B1520092EC2D /* CGIKit_4.m */,
+				1D26980216C3B1520092EC2D /* CGIKit.h */,
+				1DC69A9116D01E42008B4976 /* CGIDecls.h */,
+				1D11F67516D82224003DE312 /* GCDAsyncSocket.h */,
+				1D11F67616D82224003DE312 /* GCDAsyncSocket.m */,
+				1DC69A8716D01C3F008B4976 /* CGIRequest.h */,
+				1DC69A8816D01C3F008B4976 /* CGIRequest.m */,
+				1D11F66116D80939003DE312 /* CGIResponse.h */,
+				1D11F66216D80939003DE312 /* CGIResponse.m */,
+				1DC69A8E16D01DD0008B4976 /* CGISite.h */,
+				1DC69A8F16D01DD0008B4976 /* CGISite.m */,
+				1D11F6A216D83E4C003DE312 /* NSFileManager+Directory.h */,
+				1D11F6A316D83E4C003DE312 /* NSFileManager+Directory.m */,
+				1D11F66C16D8220D003DE312 /* CGIConnection.h */,
+				1D11F66D16D8220D003DE312 /* CGIConnection.m */,
+				1D11F66E16D8220D003DE312 /* CGIListener.h */,
+				1D11F66F16D8220D003DE312 /* CGIListener.m */,
+				1D11F67016D8220D003DE312 /* CGIServer.h */,
+				1D11F67116D8220D003DE312 /* CGIServer.m */,
+				1D11F66A16D81FEC003DE312 /* CGIModule.h */,
+				1D11F66516D81572003DE312 /* status.plist */,
 				1D2697FC16C3B1520092EC2D /* Supporting Files */,
 			);
 			path = CGIKit.4;
@@ -93,6 +463,27 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		1DC69A9A16D09FE3008B4976 /* CGIStaticContentModule */ = {
+			isa = PBXGroup;
+			children = (
+				1DC69A9B16D09FE3008B4976 /* Supporting Files */,
+				1D11F66716D81FCE003DE312 /* CGIStaticContentModule.h */,
+				1D11F66816D81FCE003DE312 /* CGIStaticContentModule.m */,
+				1D11F6A716D84D2B003DE312 /* mime.plist */,
+			);
+			path = CGIStaticContentModule;
+			sourceTree = "<group>";
+		};
+		1DC69A9B16D09FE3008B4976 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1DC69A9C16D09FE3008B4976 /* CGIStaticContentModule-Info.plist */,
+				1DC69A9D16D09FE3008B4976 /* InfoPlist.strings */,
+				1DC69AA016D09FE3008B4976 /* CGIStaticContentModule-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -100,15 +491,118 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1DC69A8A16D01CA5008B4976 /* CGIKit.h in Headers */,
+				1DC69A8B16D01CAD008B4976 /* CGIRequest.h in Headers */,
+				1DC69A9216D01E53008B4976 /* CGIDecls.h in Headers */,
+				1D11F66316D80939003DE312 /* CGIResponse.h in Headers */,
+				1D11F66B16D8200D003DE312 /* CGIModule.h in Headers */,
+				1D11F67916D82250003DE312 /* CGISite.h in Headers */,
+				1D11F67A16D82255003DE312 /* CGIConnection.h in Headers */,
+				1D11F67B16D82259003DE312 /* CGIListener.h in Headers */,
+				1D11F67816D82248003DE312 /* GCDAsyncSocket.h in Headers */,
+				1D11F67C16D8225D003DE312 /* CGIServer.h in Headers */,
+				1D11F6A616D83E56003DE312 /* NSFileManager+Directory.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		1D2697F116C3B1520092EC2D /* CGIKit.4 */ = {
+		1D0957B616CFCE0B000D76B3 /* ohttpd */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1D26980716C3B1520092EC2D /* Build configuration list for PBXNativeTarget "CGIKit.4" */;
+			buildConfigurationList = 1D0957C316CFCE0B000D76B3 /* Build configuration list for PBXNativeTarget "ohttpd" */;
+			buildPhases = (
+				1D0957B316CFCE0B000D76B3 /* Sources */,
+				1D0957B416CFCE0B000D76B3 /* Frameworks */,
+				1D0957B516CFCE0B000D76B3 /* CopyFiles */,
+				1D0957C916CFD47D000D76B3 /* CopyFiles */,
+				1D0957D116CFDA74000D76B3 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1D23687416D8A4B1007934CD /* PBXTargetDependency */,
+				1D23684116D878E6007934CD /* PBXTargetDependency */,
+				1D11F6A116D828F8003DE312 /* PBXTargetDependency */,
+				1D11F66016D80386003DE312 /* PBXTargetDependency */,
+			);
+			name = ohttpd;
+			productName = ohttpd;
+			productReference = 1D0957B716CFCE0B000D76B3 /* ohttpd */;
+			productType = "com.apple.product-type.tool";
+		};
+		1D11F68E16D82895003DE312 /* CGIListingModule */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D11F69816D82895003DE312 /* Build configuration list for PBXNativeTarget "CGIListingModule" */;
+			buildPhases = (
+				1D11F68B16D82895003DE312 /* Sources */,
+				1D11F68C16D82895003DE312 /* Frameworks */,
+				1D11F68D16D82895003DE312 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CGIListingModule;
+			productName = CGIListingModule;
+			productReference = 1D11F68F16D82895003DE312 /* CGIListingModule.cgimodule */;
+			productType = "com.apple.product-type.bundle";
+		};
+		1D23683316D875B3007934CD /* CGIBundleModule */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D23683D16D875B3007934CD /* Build configuration list for PBXNativeTarget "CGIBundleModule" */;
+			buildPhases = (
+				1D23683016D875B3007934CD /* Sources */,
+				1D23683116D875B3007934CD /* Frameworks */,
+				1D23683216D875B3007934CD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1D23685816D89598007934CD /* PBXTargetDependency */,
+			);
+			name = CGIBundleModule;
+			productName = CGIBundleModule;
+			productReference = 1D23683416D875B3007934CD /* CGIBundleModule.cgimodule */;
+			productType = "com.apple.product-type.bundle";
+		};
+		1D23684916D89571007934CD /* CGIInfo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D23685316D89571007934CD /* Build configuration list for PBXNativeTarget "CGIInfo" */;
+			buildPhases = (
+				1D23684616D89571007934CD /* Sources */,
+				1D23684716D89571007934CD /* Frameworks */,
+				1D23684816D89571007934CD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CGIInfo;
+			productName = CGIInfo;
+			productReference = 1D23684A16D89571007934CD /* CGIInfo.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		1D23686216D8A3C7007934CD /* CGIPlistModule */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D23686C16D8A3C7007934CD /* Build configuration list for PBXNativeTarget "CGIPlistModule" */;
+			buildPhases = (
+				1D23685F16D8A3C7007934CD /* Sources */,
+				1D23686016D8A3C7007934CD /* Frameworks */,
+				1D23686116D8A3C7007934CD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CGIPlistModule;
+			productName = CGIPlistModule;
+			productReference = 1D23686316D8A3C7007934CD /* CGIPlistModule.cgimodule */;
+			productType = "com.apple.product-type.bundle";
+		};
+		1D2697F116C3B1520092EC2D /* CGIKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D26980716C3B1520092EC2D /* Build configuration list for PBXNativeTarget "CGIKit" */;
 			buildPhases = (
 				1D2697ED16C3B1520092EC2D /* Sources */,
 				1D2697EE16C3B1520092EC2D /* Frameworks */,
@@ -119,10 +613,27 @@
 			);
 			dependencies = (
 			);
-			name = CGIKit.4;
+			name = CGIKit;
 			productName = CGIKit.4;
-			productReference = 1D2697F216C3B1520092EC2D /* CGIKit.4.framework */;
+			productReference = 1D2697F216C3B1520092EC2D /* CGIKit.framework */;
 			productType = "com.apple.product-type.framework";
+		};
+		1DC69A9616D09FE2008B4976 /* CGIStaticContentModule */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DC69AA116D09FE3008B4976 /* Build configuration list for PBXNativeTarget "CGIStaticContentModule" */;
+			buildPhases = (
+				1DC69A9316D09FE2008B4976 /* Sources */,
+				1DC69A9416D09FE2008B4976 /* Frameworks */,
+				1DC69A9516D09FE2008B4976 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CGIStaticContentModule;
+			productName = CGIStaticContentModule;
+			productReference = 1DC69A9716D09FE2008B4976 /* CGIStaticContentModule.cgimodule */;
+			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
 
@@ -130,6 +641,7 @@
 		1D2697E916C3B1520092EC2D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = CGI;
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = "Maxthon Chan";
 			};
@@ -145,34 +657,199 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1D2697F116C3B1520092EC2D /* CGIKit.4 */,
+				1D2697F116C3B1520092EC2D /* CGIKit */,
+				1D0957B616CFCE0B000D76B3 /* ohttpd */,
+				1DC69A9616D09FE2008B4976 /* CGIStaticContentModule */,
+				1D11F68E16D82895003DE312 /* CGIListingModule */,
+				1D23683316D875B3007934CD /* CGIBundleModule */,
+				1D23684916D89571007934CD /* CGIInfo */,
+				1D23686216D8A3C7007934CD /* CGIPlistModule */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		1D11F68D16D82895003DE312 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D11F69616D82895003DE312 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1D23683216D875B3007934CD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D23683B16D875B3007934CD /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1D23684816D89571007934CD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D23685116D89571007934CD /* InfoPlist.strings in Resources */,
+				1D23685E16D89CE0007934CD /* style.css in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1D23686116D8A3C7007934CD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D23686A16D8A3C7007934CD /* InfoPlist.strings in Resources */,
+				1D23687616D8A619007934CD /* style.css in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1D2697F016C3B1520092EC2D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				1D26980016C3B1520092EC2D /* InfoPlist.strings in Resources */,
+				1D11F66616D81572003DE312 /* status.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1DC69A9516D09FE2008B4976 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1DC69A9F16D09FE3008B4976 /* InfoPlist.strings in Resources */,
+				1D11F6A816D84D2B003DE312 /* mime.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		1D0957B316CFCE0B000D76B3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D0957BC16CFCE0B000D76B3 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1D11F68B16D82895003DE312 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D11F69D16D828BE003DE312 /* CGIListingModule.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1D23683016D875B3007934CD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D23684416D8793F007934CD /* CGIBundleModule.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1D23684616D89571007934CD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D23685C16D89763007934CD /* CGIInfo.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1D23685F16D8A3C7007934CD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D23687116D8A402007934CD /* CGIPlistModule.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1D2697ED16C3B1520092EC2D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1D26980416C3B1520092EC2D /* CGIKit_4.m in Sources */,
+				1DC69A8C16D01CB2008B4976 /* CGIRequest.m in Sources */,
+				1D11F66416D80939003DE312 /* CGIResponse.m in Sources */,
+				1D11F68116D82555003DE312 /* CGISite.m in Sources */,
+				1D11F68216D82560003DE312 /* CGIConnection.m in Sources */,
+				1D11F68316D82564003DE312 /* CGIListener.m in Sources */,
+				1D11F68416D82567003DE312 /* CGIServer.m in Sources */,
+				1D11F68516D82576003DE312 /* GCDAsyncSocket.m in Sources */,
+				1D11F6A516D83E52003DE312 /* NSFileManager+Directory.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1DC69A9316D09FE2008B4976 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D11F66916D81FCE003DE312 /* CGIStaticContentModule.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		1D11F66016D80386003DE312 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1DC69A9616D09FE2008B4976 /* CGIStaticContentModule */;
+			targetProxy = 1D11F65F16D80386003DE312 /* PBXContainerItemProxy */;
+		};
+		1D11F6A116D828F8003DE312 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1D11F68E16D82895003DE312 /* CGIListingModule */;
+			targetProxy = 1D11F6A016D828F8003DE312 /* PBXContainerItemProxy */;
+		};
+		1D23684116D878E6007934CD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1D23683316D875B3007934CD /* CGIBundleModule */;
+			targetProxy = 1D23684016D878E6007934CD /* PBXContainerItemProxy */;
+		};
+		1D23685816D89598007934CD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1D23684916D89571007934CD /* CGIInfo */;
+			targetProxy = 1D23685716D89598007934CD /* PBXContainerItemProxy */;
+		};
+		1D23687416D8A4B1007934CD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1D23686216D8A3C7007934CD /* CGIPlistModule */;
+			targetProxy = 1D23687316D8A4B1007934CD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
+		1D11F69416D82895003DE312 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1D11F69516D82895003DE312 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		1D23683916D875B3007934CD /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1D23683A16D875B3007934CD /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		1D23684F16D89571007934CD /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1D23685016D89571007934CD /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		1D23686816D8A3C7007934CD /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1D23686916D8A3C7007934CD /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 		1D2697FE16C3B1520092EC2D /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -181,9 +858,139 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
+		1DC69A9D16D09FE3008B4976 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1DC69A9E16D09FE3008B4976 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		1D0957C116CFCE0B000D76B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ohttpd/ohttpd-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1D0957C216CFCE0B000D76B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ohttpd/ohttpd-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		1D11F69916D82895003DE312 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CGIListingModule/CGIListingModule-Prefix.pch";
+				INFOPLIST_FILE = "CGIListingModule/CGIListingModule-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = cgimodule;
+			};
+			name = Debug;
+		};
+		1D11F69A16D82895003DE312 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CGIListingModule/CGIListingModule-Prefix.pch";
+				INFOPLIST_FILE = "CGIListingModule/CGIListingModule-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = cgimodule;
+			};
+			name = Release;
+		};
+		1D23683E16D875B3007934CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CGIBundleModule/CGIBundleModule-Prefix.pch";
+				INFOPLIST_FILE = "CGIBundleModule/CGIBundleModule-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = cgimodule;
+			};
+			name = Debug;
+		};
+		1D23683F16D875B3007934CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CGIBundleModule/CGIBundleModule-Prefix.pch";
+				INFOPLIST_FILE = "CGIBundleModule/CGIBundleModule-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = cgimodule;
+			};
+			name = Release;
+		};
+		1D23685416D89571007934CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CGIInfo/CGIInfo-Prefix.pch";
+				INFOPLIST_FILE = "CGIInfo/CGIInfo-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		1D23685516D89571007934CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CGIInfo/CGIInfo-Prefix.pch";
+				INFOPLIST_FILE = "CGIInfo/CGIInfo-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		1D23686D16D8A3C7007934CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CGIPlistModule/CGIPlistModule-Prefix.pch";
+				INFOPLIST_FILE = "CGIPlistModule/CGIPlistModule-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = cgimodule;
+			};
+			name = Debug;
+		};
+		1D23686E16D8A3C7007934CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CGIPlistModule/CGIPlistModule-Prefix.pch";
+				INFOPLIST_FILE = "CGIPlistModule/CGIPlistModule-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = cgimodule;
+			};
+			name = Release;
+		};
 		1D26980516C3B1520092EC2D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -249,7 +1056,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
-				FRAMEWORK_VERSION = A;
+				FRAMEWORK_VERSION = 4;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CGIKit.4/CGIKit.4-Prefix.pch";
 				INFOPLIST_FILE = "CGIKit.4/CGIKit.4-Info.plist";
@@ -264,7 +1071,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
-				FRAMEWORK_VERSION = A;
+				FRAMEWORK_VERSION = 4;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CGIKit.4/CGIKit.4-Prefix.pch";
 				INFOPLIST_FILE = "CGIKit.4/CGIKit.4-Info.plist";
@@ -273,9 +1080,77 @@
 			};
 			name = Release;
 		};
+		1DC69AA216D09FE3008B4976 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CGIStaticContentModule/CGIStaticContentModule-Prefix.pch";
+				INFOPLIST_FILE = "CGIStaticContentModule/CGIStaticContentModule-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles/CGIKit";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = cgimodule;
+			};
+			name = Debug;
+		};
+		1DC69AA316D09FE3008B4976 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CGIStaticContentModule/CGIStaticContentModule-Prefix.pch";
+				INFOPLIST_FILE = "CGIStaticContentModule/CGIStaticContentModule-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles/CGIKit";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = cgimodule;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		1D0957C316CFCE0B000D76B3 /* Build configuration list for PBXNativeTarget "ohttpd" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D0957C116CFCE0B000D76B3 /* Debug */,
+				1D0957C216CFCE0B000D76B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1D11F69816D82895003DE312 /* Build configuration list for PBXNativeTarget "CGIListingModule" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D11F69916D82895003DE312 /* Debug */,
+				1D11F69A16D82895003DE312 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1D23683D16D875B3007934CD /* Build configuration list for PBXNativeTarget "CGIBundleModule" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D23683E16D875B3007934CD /* Debug */,
+				1D23683F16D875B3007934CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1D23685316D89571007934CD /* Build configuration list for PBXNativeTarget "CGIInfo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D23685416D89571007934CD /* Debug */,
+				1D23685516D89571007934CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1D23686C16D8A3C7007934CD /* Build configuration list for PBXNativeTarget "CGIPlistModule" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D23686D16D8A3C7007934CD /* Debug */,
+				1D23686E16D8A3C7007934CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		1D2697EC16C3B1520092EC2D /* Build configuration list for PBXProject "CGIKit.4" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -285,13 +1160,23 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1D26980716C3B1520092EC2D /* Build configuration list for PBXNativeTarget "CGIKit.4" */ = {
+		1D26980716C3B1520092EC2D /* Build configuration list for PBXNativeTarget "CGIKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1D26980816C3B1520092EC2D /* Debug */,
 				1D26980916C3B1520092EC2D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DC69AA116D09FE3008B4976 /* Build configuration list for PBXNativeTarget "CGIStaticContentModule" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DC69AA216D09FE3008B4976 /* Debug */,
+				1DC69AA316D09FE3008B4976 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -1,0 +1,17 @@
+body {
+    font-family: Verdana;
+    size: 14pt;
+}
+
+table {
+    border-style: solid;
+    border-width: 1px;
+}
+
+td {
+    background-color: #cfc;
+}
+
+th {
+    background-color: #6f6;
+}

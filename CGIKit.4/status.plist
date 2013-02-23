@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>100</key>
+	<string>Continue</string>
+	<key>101</key>
+	<string>Switching Protocols</string>
+	<key>200</key>
+	<string>OK</string>
+	<key>201</key>
+	<string>Created</string>
+	<key>202</key>
+	<string>Accepted</string>
+	<key>203</key>
+	<string>Non-Authoritative Information</string>
+	<key>204</key>
+	<string>No Content</string>
+	<key>205</key>
+	<string>Reset Content</string>
+	<key>206</key>
+	<string>Partial Content</string>
+	<key>300</key>
+	<string>Multiple Choices</string>
+	<key>301</key>
+	<string>Moved Permanently</string>
+	<key>302</key>
+	<string>Found</string>
+	<key>303</key>
+	<string>See Other</string>
+	<key>304</key>
+	<string>Not Modified</string>
+	<key>305</key>
+	<string>Use Proxy</string>
+	<key>307</key>
+	<string>Temporary Redirect</string>
+	<key>400</key>
+	<string>Bad Request</string>
+	<key>401</key>
+	<string>Unauthorized</string>
+	<key>402</key>
+	<string>Payment Required</string>
+	<key>403</key>
+	<string>Forbidden</string>
+	<key>404</key>
+	<string>Not Found</string>
+	<key>405</key>
+	<string>Method Not Allowed</string>
+	<key>406</key>
+	<string>Not Acceptable</string>
+	<key>407</key>
+	<string>Proxy Authentication Required</string>
+	<key>408</key>
+	<string>Request Timeout</string>
+	<key>409</key>
+	<string>Conflict</string>
+	<key>410</key>
+	<string>Gone</string>
+	<key>411</key>
+	<string>Length Required</string>
+	<key>412</key>
+	<string>Precondition Failed</string>
+	<key>413</key>
+	<string>Request Entity Too Large</string>
+	<key>414</key>
+	<string>Request-URI Too Long</string>
+	<key>415</key>
+	<string>Unsupported Media Type</string>
+	<key>416</key>
+	<string>Requested Range Not Satisfiable</string>
+	<key>417</key>
+	<string>Expectation Failed</string>
+	<key>500</key>
+	<string>Internal Server Error</string>
+	<key>501</key>
+	<string>Not Implemented</string>
+	<key>502</key>
+	<string>Bad Gateway</string>
+	<key>503</key>
+	<string>Service Unavailable</string>
+	<key>504</key>
+	<string>Gateway Timeout</string>
+	<key>505</key>
+	<string>HTTP Version Not Supported</string>
+</dict>
+</plist>

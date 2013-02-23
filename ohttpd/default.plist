@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CGIDocumentRoot</key>
+	<string>/Users/technix/Site</string>
+	<key>CGIListen</key>
+	<integer>18080</integer>
+	<key>CGIHost</key>
+	<string>*</string>
+	<key>CGISSL</key>
+	<false/>
+	<key>CGIIndexPages</key>
+	<array>
+		<string>index.html</string>
+		<string>index.bundle</string>
+	</array>
+	<key>CGIListing</key>
+	<true/>
+</dict>
+</plist>

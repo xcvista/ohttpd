@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'CGIStaticContentModule' target in the 'CGIStaticContentModule' project
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif
