@@ -18,6 +18,7 @@ static NSString *const CGISiteConflictionDetectionNotification = @"tk.maxius.oht
 @property NSUInteger listenPort;
 @property BOOL listing;
 @property NSString *documentRoot;
+@property NSString *name;
 
 - (id)initWithConfig:(NSDictionary *)configure;
 

@@ -10,7 +10,7 @@
 
 CGIBeginDecls
 
-@interface CGIStaticContentModule : NSObject <CGIModule>
+@interface CGIStaticContentModule : NSObject <CGIBundle>
 
 @end
 

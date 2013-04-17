@@ -10,7 +10,7 @@
 
 CGIBeginDecls
 
-@interface CGIListingModule : NSObject <CGIModule>
+@interface CGIListingModule : NSObject <CGIBundle>
 
 @end
 

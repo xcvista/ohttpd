@@ -10,7 +10,7 @@
 
 CGIBeginDecls
 
-@class CGIConnection;
+@class CGIConnection, CGIModuleManager;
 @protocol CGIModule;
 
 static NSString *const CGIServerStoppingNotification = @"tk.maxius.ohttpd.closing";
@@ -27,8 +27,7 @@ static NSString *const CGIServerStoppingNotification = @"tk.maxius.ohttpd.closin
 - (void)stop;
 - (void)addConnection:(CGIConnection *)connection;
 - (void)removeConnection:(CGIConnection *)connection;
-- (id<CGIModule>)moduleForLocalURL:(NSURL *)path;
-- (id<CGIModule>)moduleForListing;
+- (CGIModuleManager *)moduleManager;
 
 @end
 

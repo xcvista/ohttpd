@@ -14,17 +14,11 @@ CGIBeginDecls
 
 @protocol CGIBundle <NSObject>
 
-- (void)processRequest:(CGIRequest *)request response:(CGIResponse *)response site:(CGISite *)site;
+- (BOOL)processRequest:(CGIRequest *)request response:(CGIResponse *)response site:(CGISite *)site;
 
 @optional
-- (BOOL)canUnload __attribute__((deprecated));
-- (void)willUnload __attribute__((deprecated));
-
-@end
-
-@protocol CGIModule <CGIBundle>
-
-- (BOOL)canProcessLocalURL:(NSURL *)URL;
+- (BOOL)canUnload;
+- (void)willUnload;
 
 @end
 

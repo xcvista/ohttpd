@@ -8,6 +8,6 @@
 
 #import <CGIKit/CGIKit.h>
 
-@interface CGIBundleModule : NSObject <CGIModule>
+@interface CGIBundleModule : NSObject <CGIBundle>
 
 @end

@@ -16,3 +16,4 @@
 #import <CGIKit/CGIConnection.h>
 #import <CGIKit/CGIListener.h>
 #import <CGIKit/CGIServer.h>
+#import <CGIKit/CGIModuleManager.h>

@@ -2,6 +2,8 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>CGISiteName</key>
+	<string>default</string>
 	<key>CGIDocumentRoot</key>
 	<string>/Users/technix/Site</string>
 	<key>CGIListen</key>

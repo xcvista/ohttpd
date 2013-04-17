@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'CGIIndexPageModule' target in the 'CGIIndexPageModule' project
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif

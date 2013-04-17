@@ -12,6 +12,7 @@
 #import "CGIResponse.h"
 #import "CGIModule.h"
 #import "CGIServer.h"
+#import "CGIModuleManager.h"
 #import "NSFileManager+Directory.h"
 
 @interface CGISite ()
@@ -30,10 +31,13 @@
     if (self = [super init])
     {
         self.documentRoot = configure[@"CGIDocumentRoot"];
+        if ([self.documentRoot hasSuffix:@"/"])
+            self.documentRoot = [self.documentRoot substringToIndex:[self.documentRoot length] - 2];
         self.listenPort = [configure[@"CGIListen"] unsignedIntegerValue];
         self.listenHost = configure[@"CGIHost"];
         self.listing = [configure[@"CGIListing"] boolValue];
         self._indexPages = configure[@"CGIIndexPages"];
+        self.name = configure[@"CGIName"];
         
         [[NSNotificationCenter defaultCenter] addObserver:self
                                                  selector:@selector(_tryHandle:)
@@ -87,28 +91,12 @@
     NSURL *requestedURL = [request requestURL];
     NSURL *localURL = [self localURLForPath:[requestedURL path]];
     NSFileManager *fileManager = [NSFileManager defaultManager];
-    id<CGIModule> __weak module = [[CGIServer server] moduleForLocalURL:localURL];
-    if (module)
-        [module processRequest:request response:response site:self];
-    else if ([fileManager isDirectoryAtPath:[localURL path]])
+    if ([[[CGIServer server] moduleManager] tryHandleRequest:request
+                                                    response:response
+                                                        site:self
+                                                  keepBundle:YES])
     {
-        BOOL processed = NO;
-        for (NSString *index in self._indexPages)
-        {
-            NSString *newLocal = [[localURL path] stringByAppendingPathComponent:index];
-            if ([fileManager fileExistsAtPath:newLocal] && (module = [[CGIServer server] moduleForLocalURL:[NSURL URLWithString:NSprintf(@"file://localhost%@", newLocal)]]))
-            {
-                request.requestURI = [request.requestURI stringByAppendingPathComponent:index];
-                [module processRequest:request response:response site:self];
-                processed = YES;
-                break;
-            }
-        }
-        if (!processed)
-        {
-            module = [[CGIServer server] moduleForListing];
-            [module processRequest:request response:response site:self];
-        }
+        // yay
     }
     else if (![fileManager fileExistsAtPath:[localURL path]])
     {
